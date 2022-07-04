@@ -1,0 +1,20 @@
+* MagnifyView
+
+Magnify an image or a child view.
+
+** Usage
+
+#+begin_src swift
+  GeometryReader { geo in
+      MagnifyView(size: geo.size) {
+                      Image(packageResource: "testImage", ofType: "jpg")
+                          .resizable()
+                  }
+  }
+#+end_src
+
+#+begin_src swift
+MagnifyView(size: CGSize(width: 300, height: 200)) {
+                    Text(".This is a text for a preview.")
+}
+#+end_src
